@@ -1,0 +1,19 @@
+{
+  //Just a test comment so we can test removing codespace
+  "name": "MindTap",
+  "docker": {
+    "image": "mcr.microsoft.com/devcontainers/universal:linux"
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": ["cengage.cengage-companion", "ritwickdey.LiveServer"]
+    }
+  },
+  "forwardPorts": [3005],
+  "portsAttributes": {
+    "3005": {
+      "label": "cengage-companion"
+    }
+  }
+}
